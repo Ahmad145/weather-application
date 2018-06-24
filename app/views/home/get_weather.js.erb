@@ -1,0 +1,4 @@
+$('.weather-update').remove();
+$( "#weather-update-index-page" ).append( "<%= j render(partial: 'weather_update', locals: {city: @city, weather_data: @main_temperature_parameters}) %>" );
+$('.site-contents').fadeIn();
+$('#ajaxBusy').hide();
